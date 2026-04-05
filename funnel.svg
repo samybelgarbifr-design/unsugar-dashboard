@@ -29,7 +29,8 @@
   <text x="110" y="244" text-anchor="middle" fill="#555" font-size="9">YouTube / Bouche-a-oreille</text>
 
   <!-- Arrow 1 -->
-  <polygon points="200,180 220,170 220,175 240,175 240,185 220,185 220,190" fill="#22c55e" opacity="0.6"/>
+  <rect x="198" y="176" width="30" height="8" rx="2" fill="#22c55e" opacity="0.6"/>
+  <polygon points="228,172 244,180 228,188" fill="#22c55e" opacity="0.6"/>
 
   <!-- Step 2 -->
   <rect x="250" y="90" width="160" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
@@ -43,7 +44,8 @@
   <text x="330" y="250" text-anchor="middle" fill="#888" font-size="10">au checkout (Stripe)</text>
 
   <!-- Arrow 2 -->
-  <polygon points="420,180 440,170 440,175 460,175 460,185 440,185 440,190" fill="#22c55e" opacity="0.6"/>
+  <rect x="418" y="176" width="30" height="8" rx="2" fill="#22c55e" opacity="0.6"/>
+  <polygon points="448,172 464,180 448,188" fill="#22c55e" opacity="0.6"/>
 
   <!-- Step 3 -->
   <rect x="470" y="90" width="160" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
@@ -57,7 +59,8 @@
   <text x="550" y="254" text-anchor="middle" fill="#555" font-size="9">+ lien App Store / Play Store</text>
 
   <!-- Arrow 3 -->
-  <polygon points="640,180 660,170 660,175 680,175 680,185 660,185 660,190" fill="#22c55e" opacity="0.6"/>
+  <rect x="638" y="176" width="30" height="8" rx="2" fill="#22c55e" opacity="0.6"/>
+  <polygon points="668,172 684,180 668,188" fill="#22c55e" opacity="0.6"/>
 
   <!-- Step 4 -->
   <rect x="690" y="90" width="180" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
@@ -71,7 +74,8 @@
   <text x="780" y="250" text-anchor="middle" fill="#555" font-size="9">Play Store (Android)</text>
 
   <!-- Row 2 - Arrow down from Step 4 -->
-  <polygon points="780,280 770,300 775,300 775,320 785,320 785,300 790,300" fill="#22c55e" opacity="0.6"/>
+  <rect x="776" y="278" width="8" height="30" rx="2" fill="#22c55e" opacity="0.6"/>
+  <polygon points="772,308 780,324 788,308" fill="#22c55e" opacity="0.6"/>
 
   <!-- Step 5 -->
   <rect x="470" y="340" width="400" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
@@ -97,7 +101,8 @@
   <text x="670" y="496" text-anchor="middle" fill="#555" font-size="10">Si code invalide → message d'erreur + "Renvoyer mon code"</text>
 
   <!-- Arrow to Step 6 -->
-  <polygon points="460,430 440,420 440,425 420,425 420,435 440,435 440,440" fill="#22c55e" opacity="0.6"/>
+  <polygon points="460,422 444,430 460,438" fill="#22c55e" opacity="0.6"/>
+  <rect x="420" y="426" width="24" height="8" rx="2" fill="#22c55e" opacity="0.6"/>
 
   <!-- Step 6 -->
   <rect x="30" y="340" width="380" height="180" rx="12" fill="#1e3a2a" stroke="#22c55e" stroke-opacity="0.3"/>
