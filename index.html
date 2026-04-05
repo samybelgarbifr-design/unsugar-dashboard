@@ -131,6 +131,7 @@
     <div class="tab" onclick="switchTab('influenceurs')"><span>&#x1F465;</span> Influenceurs</div>
     <div class="tab" onclick="switchTab('features')"><span>&#x1F680;</span> Features</div>
     <div class="tab" onclick="switchTab('publication')"><span>&#x1F4F1;</span> Test & Approbation</div>
+    <div class="tab" onclick="switchTab('funnel')"><span>&#x1F4B0;</span> Tunnel de vente</div>
 </div>
 
 <div class="content">
@@ -506,6 +507,75 @@
             <tr><td>Preparer assets (screenshots, icone, textes)</td><td>1-2 jours</td></tr>
             <tr><td>Soumission + review Apple</td><td>1-7 jours</td></tr>
             <tr><td>Soumission + review Google</td><td>1-3 jours</td></tr>
+        </table>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 7 : TUNNEL DE VENTE               -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel" id="panel-funnel">
+
+    <div class="section-title">Parcours client — De la decouverte a l'app</div>
+
+    <div class="card" style="padding:0;overflow:hidden;border:none;background:transparent">
+        <img src="funnel.svg" alt="Tunnel de vente UnSugar" style="width:100%;height:auto"/>
+    </div>
+
+    <div class="section-title">Detail des etapes</div>
+
+    <div class="card">
+        <h3>Etape 1 — Decouverte</h3>
+        <p>L'utilisatrice decouvre UnSugar via une micro-influenceuse (Instagram, TikTok, YouTube) ou par bouche-a-oreille. L'influenceuse partage un lien vers la landing page, eventuellement avec un code promo.</p>
+    </div>
+    <div class="card">
+        <h3>Etape 2 — Landing page + Paiement</h3>
+        <p>Page de vente presentant le challenge 30 jours. Paiement <strong>29,99 EUR</strong> via Stripe. Au checkout, elle renseigne son <strong>email</strong> et son <strong>numero de telephone</strong>.</p>
+    </div>
+    <div class="card">
+        <h3>Etape 3 — Reception du code</h3>
+        <p>Immediatement apres le paiement, elle recoit son <strong>code d'acces unique</strong> par <strong>email ET par SMS</strong> (double envoi pour ne jamais perdre le code). L'email contient aussi le lien de telechargement de l'app.</p>
+        <br>
+        <p><strong>Outils :</strong> Brevo (ex-Sendinblue) pour l'envoi email + SMS. Cout : ~0,04 EUR/SMS.</p>
+    </div>
+    <div class="card">
+        <h3>Etape 4 — Telechargement</h3>
+        <p>Elle clique sur le lien App Store ou Play Store dans l'email/SMS et telecharge l'app UnSugar.</p>
+    </div>
+    <div class="card">
+        <h3>Etape 5 — Creation de compte + Code d'acces</h3>
+        <p>Dans l'app, elle passe par 4 ecrans :</p>
+        <ul>
+            <li><strong>Ecran 1 :</strong> "Bienvenue chez les Unsugirls" + bouton Commencer</li>
+            <li><strong>Ecran 2 :</strong> Saisie du prenom</li>
+            <li><strong>Ecran 3 :</strong> Saisie de l'email</li>
+            <li><strong>Ecran 4 :</strong> Saisie du code d'acces (ex: UNSG-7K2M-X9PL)</li>
+        </ul>
+        <br>
+        <p>Le code est verifie dans Supabase. Si valide → acces autorise. Si invalide → message d'erreur + bouton "Renvoyer mon code".</p>
+        <p><strong>Code a usage unique, expire apres 7 jours.</strong></p>
+    </div>
+    <div class="card">
+        <h3>Etape 6 — Elle est dans l'app</h3>
+        <p>Le challenge commence. Elle a acces a :</p>
+        <ul>
+            <li>Les 5 salons de discussion</li>
+            <li>Le salon vocal "Discussion libre"</li>
+            <li>Le coach IA personnel</li>
+            <li>Son premier check-in du matin</li>
+            <li>Sa buddy (jumelage automatique)</li>
+        </ul>
+    </div>
+
+    <div class="section-title">Cout par cliente</div>
+    <div class="card">
+        <table>
+            <tr><th>Poste</th><th>Cout</th></tr>
+            <tr><td>SMS (Brevo/Twilio)</td><td>~0,04 EUR</td></tr>
+            <tr><td>Commission Stripe (0,8% + 0,25 EUR)</td><td>~0,49 EUR</td></tr>
+            <tr><td>Email (Brevo gratuit < 300/jour)</td><td>0 EUR</td></tr>
+            <tr><td><strong>Total</strong></td><td><strong>~0,53 EUR</strong></td></tr>
+            <tr><td><strong>Marge nette par cliente</strong></td><td><strong>29,46 EUR (98%)</strong></td></tr>
         </table>
     </div>
 </div>

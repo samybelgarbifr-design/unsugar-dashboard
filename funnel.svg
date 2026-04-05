@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0f0f0f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" rx="16" fill="#0f0f0f"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#22c55e" font-size="18" font-weight="700" letter-spacing="2">TUNNEL DE VENTE — UNSUGAR</text>
+  <text x="450" y="60" text-anchor="middle" fill="#555" font-size="12">De la decouverte a l'onboarding dans l'app</text>
+
+  <!-- Step 1 -->
+  <rect x="30" y="90" width="160" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
+  <circle cx="110" cy="125" r="22" fill="#2a2518"/>
+  <text x="110" y="131" text-anchor="middle" fill="#f59e0b" font-size="22">1</text>
+  <text x="110" y="162" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Decouverte</text>
+  <text x="110" y="182" text-anchor="middle" fill="#888" font-size="10">L'influenceuse</text>
+  <text x="110" y="196" text-anchor="middle" fill="#888" font-size="10">partage un lien</text>
+  <text x="110" y="210" text-anchor="middle" fill="#888" font-size="10">ou un code promo</text>
+  <text x="110" y="230" text-anchor="middle" fill="#555" font-size="9">Instagram / TikTok</text>
+  <text x="110" y="244" text-anchor="middle" fill="#555" font-size="9">YouTube / Bouche-a-oreille</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="200,180 220,170 220,175 240,175 240,185 220,185 220,190" fill="#22c55e" opacity="0.6"/>
+
+  <!-- Step 2 -->
+  <rect x="250" y="90" width="160" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
+  <circle cx="330" cy="125" r="22" fill="#1a2530"/>
+  <text x="330" y="131" text-anchor="middle" fill="#38bdf8" font-size="22">2</text>
+  <text x="330" y="162" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Landing Page</text>
+  <text x="330" y="182" text-anchor="middle" fill="#888" font-size="10">Presentation du</text>
+  <text x="330" y="196" text-anchor="middle" fill="#888" font-size="10">challenge 30 jours</text>
+  <text x="330" y="216" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="700">29,99 EUR</text>
+  <text x="330" y="236" text-anchor="middle" fill="#888" font-size="10">Email + Telephone</text>
+  <text x="330" y="250" text-anchor="middle" fill="#888" font-size="10">au checkout (Stripe)</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="420,180 440,170 440,175 460,175 460,185 440,185 440,190" fill="#22c55e" opacity="0.6"/>
+
+  <!-- Step 3 -->
+  <rect x="470" y="90" width="160" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
+  <circle cx="550" cy="125" r="22" fill="#1e3a2a"/>
+  <text x="550" y="131" text-anchor="middle" fill="#22c55e" font-size="22">3</text>
+  <text x="550" y="162" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Code envoye</text>
+  <text x="550" y="185" text-anchor="middle" fill="#888" font-size="10">Email automatique</text>
+  <text x="550" y="199" text-anchor="middle" fill="#888" font-size="10">+</text>
+  <text x="550" y="213" text-anchor="middle" fill="#888" font-size="10">SMS automatique</text>
+  <text x="550" y="236" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="600">UNSG-7K2M-X9PL</text>
+  <text x="550" y="254" text-anchor="middle" fill="#555" font-size="9">+ lien App Store / Play Store</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="640,180 660,170 660,175 680,175 680,185 660,185 660,190" fill="#22c55e" opacity="0.6"/>
+
+  <!-- Step 4 -->
+  <rect x="690" y="90" width="180" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
+  <circle cx="780" cy="125" r="22" fill="#251a30"/>
+  <text x="780" y="131" text-anchor="middle" fill="#a855f7" font-size="22">4</text>
+  <text x="780" y="162" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Telechargement</text>
+  <text x="780" y="185" text-anchor="middle" fill="#888" font-size="10">Elle telecharge l'app</text>
+  <text x="780" y="199" text-anchor="middle" fill="#888" font-size="10">depuis le lien dans</text>
+  <text x="780" y="213" text-anchor="middle" fill="#888" font-size="10">l'email ou le SMS</text>
+  <text x="780" y="236" text-anchor="middle" fill="#555" font-size="9">App Store (iOS)</text>
+  <text x="780" y="250" text-anchor="middle" fill="#555" font-size="9">Play Store (Android)</text>
+
+  <!-- Row 2 - Arrow down from Step 4 -->
+  <polygon points="780,280 770,300 775,300 775,320 785,320 785,300 790,300" fill="#22c55e" opacity="0.6"/>
+
+  <!-- Step 5 -->
+  <rect x="470" y="340" width="400" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a"/>
+  <circle cx="510" cy="375" r="22" fill="#2a1818"/>
+  <text x="510" y="381" text-anchor="middle" fill="#ef4444" font-size="22">5</text>
+  <text x="670" y="370" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Creation de compte dans l'app</text>
+
+  <text x="510" y="418" text-anchor="middle" fill="#22c55e" font-size="11" font-weight="600">Ecran 1</text>
+  <text x="510" y="434" text-anchor="middle" fill="#888" font-size="10">"Bienvenue"</text>
+  <text x="510" y="448" text-anchor="middle" fill="#888" font-size="10">+ Commencer</text>
+
+  <text x="600" y="418" text-anchor="middle" fill="#22c55e" font-size="11" font-weight="600">Ecran 2</text>
+  <text x="600" y="434" text-anchor="middle" fill="#888" font-size="10">Prenom</text>
+
+  <text x="690" y="418" text-anchor="middle" fill="#22c55e" font-size="11" font-weight="600">Ecran 3</text>
+  <text x="690" y="434" text-anchor="middle" fill="#888" font-size="10">Email</text>
+
+  <text x="780" y="418" text-anchor="middle" fill="#22c55e" font-size="11" font-weight="600">Ecran 4</text>
+  <text x="780" y="434" text-anchor="middle" fill="#888" font-size="10">Code d'acces</text>
+  <text x="780" y="450" text-anchor="middle" fill="#f59e0b" font-size="9">UNSG-7K2M-X9PL</text>
+
+  <text x="670" y="480" text-anchor="middle" fill="#555" font-size="10">Verification code dans Supabase → si OK, acces autorise</text>
+  <text x="670" y="496" text-anchor="middle" fill="#555" font-size="10">Si code invalide → message d'erreur + "Renvoyer mon code"</text>
+
+  <!-- Arrow to Step 6 -->
+  <polygon points="460,430 440,420 440,425 420,425 420,435 440,435 440,440" fill="#22c55e" opacity="0.6"/>
+
+  <!-- Step 6 -->
+  <rect x="30" y="340" width="380" height="180" rx="12" fill="#1e3a2a" stroke="#22c55e" stroke-opacity="0.3"/>
+  <circle cx="70" cy="375" r="22" fill="url(#green)"/>
+  <text x="70" y="381" text-anchor="middle" fill="#000" font-size="22" font-weight="700">6</text>
+  <text x="220" y="370" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Elle est dans l'app !</text>
+  <text x="220" y="395" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="600">Le challenge commence</text>
+
+  <text x="100" y="430" fill="#ccc" font-size="11">&#x1F4AC; Acces aux 5 salons de discussion</text>
+  <text x="100" y="450" fill="#ccc" font-size="11">&#x1F50A; Salon vocal "Discussion libre"</text>
+  <text x="100" y="470" fill="#ccc" font-size="11">&#x2728; Coach IA personnel</text>
+  <text x="100" y="490" fill="#ccc" font-size="11">&#x1F525; Premier check-in du matin</text>
+  <text x="100" y="510" fill="#ccc" font-size="11">&#x1F91D; Jumelage avec sa buddy</text>
+
+  <!-- Footer -->
+  <rect x="30" y="550" width="840" height="50" rx="10" fill="#1a1a1a" stroke="#2a2a2a"/>
+  <text x="450" y="570" text-anchor="middle" fill="#666" font-size="11">Outils : Stripe (paiement) → Brevo (email + SMS) → App Store / Play Store (telechargement) → Supabase (verification code)</text>
+  <text x="450" y="588" text-anchor="middle" fill="#555" font-size="10">Cout par cliente : ~0,04 EUR (SMS) + ~0,25 EUR (Stripe 0,8%) = ~0,29 EUR | Marge nette : 29,70 EUR</text>
+</svg>
