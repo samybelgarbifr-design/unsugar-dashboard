@@ -150,9 +150,40 @@
             <tr><td>Backend / BDD</td><td>Supabase (PostgreSQL)</td><td>Auth, base de donnees, realtime WebSocket</td></tr>
             <tr><td>Vocal</td><td>Daily.co</td><td>Salons vocaux (WebView MVP, SDK natif en prod)</td></tr>
             <tr><td>Agent IA</td><td>OpenAI GPT-4o-mini</td><td>Coach nutrition, contexte 30 messages par user</td></tr>
+            <tr><td>Notifications Push</td><td>Expo Notifications &rarr; APNs + FCM</td><td>Notifications push iOS et Android (gratuit)</td></tr>
             <tr><td>Hosting Web</td><td>GitHub Pages</td><td>Deploiement web gratuit</td></tr>
             <tr><td>Hosting Mobile</td><td>App Store + Play Store</td><td>Distribution apps natives</td></tr>
         </table>
+    </div>
+
+    <div class="section-title">Notifications Push — Comment ca marche</div>
+    <div class="card">
+        <h3>Expo Notifications &rarr; APNs + FCM</h3>
+        <p>Expo Notifications est le service de notifications push integre a Expo. Il sert de <strong>proxy intelligent</strong> : on envoie une seule requete a Expo, et Expo la route automatiquement vers le bon service selon le telephone de l'utilisatrice.</p>
+        <br>
+        <table>
+            <tr><th>Composant</th><th>Role</th><th>Cout</th></tr>
+            <tr><td><strong>Expo Push Service</strong></td><td>API unique pour envoyer les notifications. On lui donne le message + le token de l'utilisatrice, il fait le reste.</td><td>Gratuit</td></tr>
+            <tr><td><strong>APNs</strong> (Apple Push Notification service)</td><td>Service d'Apple qui delivre les notifications sur iPhone/iPad. Expo envoie a APNs automatiquement pour les utilisatrices iOS.</td><td>Gratuit</td></tr>
+            <tr><td><strong>FCM</strong> (Firebase Cloud Messaging)</td><td>Service de Google qui delivre les notifications sur Android. Expo envoie a FCM automatiquement pour les utilisatrices Android.</td><td>Gratuit</td></tr>
+        </table>
+        <br>
+        <p><strong>Le flux :</strong> Notre app &rarr; Expo Push Service &rarr; detecte iOS ou Android &rarr; APNs (iPhone) ou FCM (Android) &rarr; notification sur le telephone</p>
+        <br>
+        <p><strong>Config requise en production :</strong></p>
+        <ul>
+            <li>Une <strong>cle APNs</strong> (generee dans le portail Apple Developer) — config one-time</li>
+            <li>Un <strong>projet Firebase</strong> avec FCM active (gratuit) — config one-time</li>
+        </ul>
+        <br>
+        <p><strong>Exemples de notifications prevues :</strong></p>
+        <ul>
+            <li>"Tu n'as pas fait ton check-in aujourd'hui"</li>
+            <li>"Ta buddy Camille t'a envoye un message"</li>
+            <li>"Live coaching dans 15 minutes"</li>
+            <li>"Bravo ! Tu es a ton jour 14 sans sucre"</li>
+            <li>"Nouveau message dans le salon Motivation"</li>
+        </ul>
     </div>
 
     <div class="section-title">Base de donnees Supabase</div>
