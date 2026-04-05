@@ -1,0 +1,594 @@
+[
+  {
+    "name": "BYEBYE SUGAR (Arreter le Sucre)",
+    "type": "App mobile (iOS)",
+    "url": "https://apps.apple.com/fr/app/arr%C3%AAter-le-sucre-byebye-sugar/id6747186384",
+    "price": "Gratuit + achats integres",
+    "description": "App francaise #1 contre les tentations et l'addiction au sucre. Aide avec les envies de sucre et le grignotage emotionnel.",
+    "audience": "Marche francophone, iPhone uniquement"
+  },
+  {
+    "name": "No Sugar Challenge: Sugar Free",
+    "type": "App mobile (iOS)",
+    "url": "https://apps.apple.com/fr/app/no-sugar-challenge-sugar-free/id6740812600",
+    "price": "Gratuit + achats integres",
+    "description": "Challenge sans sucre avec systeme d'achievements et gamification. AI Food Tracker et Meal Scanner integres. Note 4.9/5.",
+    "audience": "International, 15+ notes App Store"
+  },
+  {
+    "name": "No Sugar Challenge App",
+    "type": "App mobile (iOS/iPad)",
+    "url": "https://apps.apple.com/us/app/no-sugar-challenge-app/id6753064402",
+    "price": "Gratuit + achats integres",
+    "description": "Compagnon bienveillant pour se liberer du sucre. Se positionne comme plus qu'une app de regime.",
+    "audience": "International"
+  },
+  {
+    "name": "STOPPR: Stop Sugar Now",
+    "type": "App mobile (iOS)",
+    "url": "https://apps.apple.com/fr/app/stop-sugar-now-stoppr/id6742406521",
+    "price": "Gratuit + achats integres",
+    "description": "App de regime sans sucre par David Attias. Note 4.5/5 avec 194 notes sur l'App Store.",
+    "audience": "194 notes, marche francophone"
+  },
+  {
+    "name": "Defi sans sucre (Strange Development)",
+    "type": "App mobile (Android)",
+    "url": "https://play.google.com/store/apps/details?id=com.strang_development.no_sugar_challenge",
+    "price": "Gratuit + annonces + achats integres",
+    "description": "App Sugar Free Challenge sur Google Play. Note 2.1/5 avec 120 avis.",
+    "audience": "100k+ telechargements"
+  },
+  {
+    "name": "Defi Sans Sucre (My Happy Family)",
+    "type": "App mobile (Android/iOS)",
+    "url": "https://play.google.com/store/apps/details?id=fr.myhappyfamily.nosugarchallenge",
+    "price": "Gratuit + achats integres",
+    "description": "Suivez votre consommation de sucre en un seul geste. Marquez les jours ou vous reussissez. Note 4.6/5 avec 358 avis.",
+    "audience": "10k+ telechargements, 358 avis"
+  },
+  {
+    "name": "UnSugar : Detox Sucre",
+    "type": "App mobile (iOS/iPad)",
+    "url": "https://apps.apple.com/ci/app/unsugar-d%C3%A9tox-sucre/id6747821740",
+    "price": "Gratuit + achats integres",
+    "description": "Suivez vos jours sans sucre. Aide a se liberer des envies de sucre et se sentir en pleine forme.",
+    "audience": "Marche francophone, lance dec 2025"
+  },
+  {
+    "name": "Sugarcut: Quit Sugar Addiction",
+    "type": "App mobile (iOS/Android)",
+    "url": "https://apps.apple.com/gb/app/sugarcut-quit-sugar-addiction/id6747895996",
+    "price": "Gratuit + achats integres",
+    "description": "Plan de detox sucre personnalise. App ultime pour arreter le sucre et retrouver son energie.",
+    "audience": "International, 500+ telechargements Android"
+  },
+  {
+    "name": "Sugarfree Quit Sugar Addiction (Joyinapps)",
+    "type": "App mobile (Android)",
+    "url": "https://play.google.com/store/apps/details?id=com.sugarfree.app",
+    "price": "Gratuit + achats integres",
+    "description": "App pour arreter le sucre ajoute ou vivre sans sucre. Note 3.5/5.",
+    "audience": "50k+ telechargements, 1660 avis"
+  },
+  {
+    "name": "Sugar Buddy",
+    "type": "App mobile (iOS/Android)",
+    "url": "https://sugarbuddy.app/",
+    "price": "Gratuit (telechargement)",
+    "description": "Coaching IA, respiration guidee, bouton panique pour les moments difficiles. Suivi du streak sans sucre. Rejoint par des milliers d'utilisateurs.",
+    "audience": "International, croissance rapide"
+  },
+  {
+    "name": "StopSugar",
+    "type": "App mobile (iOS, Android bientot)",
+    "url": "https://stopsugar.app/",
+    "price": "Gratuit pour commencer, sans pub",
+    "description": "Briser le cycle des cravings, crashes et tentatives echouees. Retrouver energie et controle en 90 jours.",
+    "audience": "International"
+  },
+  {
+    "name": "Sugarless - Quit Sugar Habit",
+    "type": "App mobile (Android)",
+    "url": "https://play.google.com/store/apps/details?id=com.missingapps.quitsugar",
+    "price": "Gratuit + annonces + achats integres",
+    "description": "App pour prendre le controle de ses habitudes sucrees. Note 2.6/5.",
+    "audience": "10k+ telechargements"
+  },
+  {
+    "name": "LastCookie: Quit Sugar, Detox",
+    "type": "App mobile (iOS)",
+    "url": "https://apps.apple.com/us/app/lastcookie-quit-sugar-detox/id6746574073",
+    "price": "Gratuit + achats integres",
+    "description": "Arreter le binge eating et transformer son apparence. Par LEANLAUNCH LTD. Note 4.0/5.",
+    "audience": "International"
+  },
+  {
+    "name": "I Quit Sugar - Programme 8 semaines",
+    "type": "Programme en ligne",
+    "url": "https://iquitsugar.com/",
+    "price": "A partir de 99 AUD (ebooks gratuits a l'inscription)",
+    "description": "Programme phare de Sarah Wilson. Plus de 2 millions de personnes ont deja arrete le sucre avec IQS. Programme en 8 semaines avec recettes, plans de repas, communaute.",
+    "audience": "2+ millions d'utilisateurs dans le monde"
+  },
+  {
+    "name": "Skilleos - Vaincre l'addiction au sucre",
+    "type": "Cours en ligne / e-learning",
+    "url": "https://www.skilleos.com/cours/controler-addiction-sucre-en-ligne",
+    "price": "Abonnement Skilleos (a partir de 19.90 EUR/mois)",
+    "description": "Cours de 2h24 par Frederique Chataigner. Reprendre le controle de son comportement alimentaire. Plateforme francaise.",
+    "audience": "Marche francophone, plateforme Skilleos"
+  },
+  {
+    "name": "Secret de Sante O'naturel - Programme arreter le sucre",
+    "type": "Programme en ligne",
+    "url": "https://secretdesante.fr/arret-sucre/",
+    "price": "Non communique",
+    "description": "Programme structure pour dire adieu au sucre. Approche naturelle de la sante.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "7 jours pour se liberer du sucre (Ambre Guinard)",
+    "type": "Programme en ligne",
+    "url": "https://www.unpetitgoutdambre.com/7-jours",
+    "price": "Non communique",
+    "description": "Experience de 7 jours pour reduire les produits sucres, rehabituer le palais, retrouver l'energie et ameliorer la sante.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Defi 28 jours - Catherine Lemercier",
+    "type": "Programme coaching + hypnose",
+    "url": "https://www.catherinelemercier.fr/dependance-sucre/",
+    "price": "Non communique",
+    "description": "Programme personnalise en hypnose et fleurs de Bach sur 28 jours. En cabinet (Angers) et a distance.",
+    "audience": "Marche francophone, region Angers"
+  },
+  {
+    "name": "Defi sans sucre 15 jours - Sylvia Tremblay",
+    "type": "Programme en ligne",
+    "url": "https://www.sylviatremblay.com/defi-sans-sucre-sylvia-tremblay",
+    "price": "Non communique",
+    "description": "15 jours pour apprendre a controler et eliminer les rages de sucre de facon simple et rapide.",
+    "audience": "Marche francophone (Quebec)"
+  },
+  {
+    "name": "21 jours pour se liberer du sucre - Cabinet de Nutrition",
+    "type": "Programme en ligne (Teachable)",
+    "url": "https://cabinet-de-nutrition-nutri-vitalite.teachable.com/p/21-jours-pour-se-libere-du-sucr",
+    "price": "Non communique",
+    "description": "Programme en ligne sur 21 jours pour redecouvrir la serenite alimentaire et creer de nouvelles habitudes. Se liberer du sucre raffine tout en gardant le plaisir.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "ABC Sobriete - Programme Detox-sucre",
+    "type": "Programme en ligne",
+    "url": "https://abcsobriete.fr/programme-detox-sucre/",
+    "price": "Non communique",
+    "description": "Nouveau programme d'ABC Sobriete pour se liberer des fluctuations d'energie et d'humeur causees par le sucre.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Challenge #1MoisSansSucre - Nutrition Anti-Stress",
+    "type": "Challenge communautaire en ligne",
+    "url": "https://nutritionantistress.com/challenge-sans-sucre/",
+    "price": "Gratuit",
+    "description": "Challenge communautaire mensuel. Plus de 380 participants. Possibilite de simplement reduire sa consommation ou arreter completement.",
+    "audience": "380+ participants, marche francophone"
+  },
+  {
+    "name": "Challenge Stop Sucre 21 jours - HappyBody by Ju",
+    "type": "Challenge en ligne",
+    "url": "https://www.happybodybyju.com/post/challenge-stop-sucre-de-21-jours",
+    "price": "Non communique",
+    "description": "Challenge de 21 jours axe sur le probleme de la rechute. Accompagnement pour ne pas reprendre apres l'arret.",
+    "audience": "Marche francophone, Instagram @happybody_byju"
+  },
+  {
+    "name": "0 sucre et IG bas - Programme detox sucre en groupe",
+    "type": "Coaching de groupe",
+    "url": "https://zerosucreetigbas.fr/programme-detox-sucre/",
+    "price": "Non communique",
+    "description": "Coaching detox sucre en groupe apres 4 ans de coaching individuel. Axe detox sucre + reequilibrage alimentaire IG bas.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Lucile Woodward - Detox au Sucre",
+    "type": "Programme en ligne",
+    "url": "https://lucilewoodward.com/shop/programmes/detox-au-sucre/",
+    "price": "Non communique",
+    "description": "Programme par Lucile Woodward, coach sport et nutrition. Conseils et planning de repas. Note 5.00/5 (2 avis).",
+    "audience": "Lucile Woodward : 1M+ abonnes YouTube"
+  },
+  {
+    "name": "Wooskill - Le Sevrage Complet du Sucre (Hypnose)",
+    "type": "Coaching prive / Hypnose",
+    "url": "https://www.wooskill.com/fr/offer/o-25705-Le-Sevrage-Complet-du-Sucre-Grignotage-addiction-Gestion-du-poids",
+    "price": "Non communique (coaching prive 1h15)",
+    "description": "Seance d'hypnose de 1h15 pour le sevrage complet du sucre, grignotage et addiction. Note 5.0/5 sur Wooskill.",
+    "audience": "Marche francophone, plateforme Wooskill"
+  },
+  {
+    "name": "LaserAddict - Stop Sucre",
+    "type": "Traitement physique (laser doux)",
+    "url": "https://laseraddict.fr/services/stop-sucre/",
+    "price": "Non communique",
+    "description": "Methode par laser doux pour vaincre l'addiction au sucre. Approche similaire au laser anti-tabac.",
+    "audience": "France, centres physiques"
+  },
+  {
+    "name": "Frederic Ternon - Coaching arreter le sucre (Hypnose)",
+    "type": "Coaching individuel / Hypnose",
+    "url": "https://www.fredericternon.com/troubles-alimentaires-poids",
+    "price": "Non communique",
+    "description": "Coaching par hypnose pour transformer sa relation avec la nourriture. Specialise troubles alimentaires et poids.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "DietByLess - Coaching alimentation et sucre",
+    "type": "Coaching individuel en ligne",
+    "url": "https://dietbyless.com/coaching-alimentation-sucre-poids-balance-kilos-culpabilite-alimentaire-femmes-mamans",
+    "price": "Non communique",
+    "description": "Accompagnement 100% personnalise pour resoudre son rapport au corps, au poids et a l'alimentation. Cible femmes et mamans.",
+    "audience": "Femmes et mamans francophones"
+  },
+  {
+    "name": "NaturHessentielle - Bilan Sante Glycemie",
+    "type": "Coaching individuel",
+    "url": "https://naturhessentielle.ch/coaching/detox-au-sucre/",
+    "price": "Non communique",
+    "description": "Coaching personnalise combinant nutrition, methodes analytiques et aromatherapie pour transformer le lien au sucre.",
+    "audience": "Suisse francophone"
+  },
+  {
+    "name": "Cecile Nutri Coaching - Programme Nutricoach",
+    "type": "Coaching individuel (3 mois)",
+    "url": "https://cecilenutricoaching.fr/mes-services/",
+    "price": "540 EUR (programme 3 mois)",
+    "description": "3 mois pour retrouver une relation apaisee avec la nourriture, gagner en energie, structurer son alimentation.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "C'est decide, j'arrete le sucre - Sarah Wilson",
+    "type": "Livre",
+    "url": "https://www.hachette.fr/livre/cest-decide-jarrete-le-sucre-9782036062245",
+    "price": "Environ 15-20 EUR (broche)",
+    "description": "Bestseller international. Programme detox et minceur en 8 semaines. Edition Larousse. Disponible aussi en ebook.",
+    "audience": "International, traduit en francais"
+  },
+  {
+    "name": "Sucre : Dites adieu a son emprise - Pierre Joyeau & Cyril Laporte",
+    "type": "Livre",
+    "url": "https://www.leslibraires.fr/livre/25956594-sucre-dites-adieu-a-son-emprise",
+    "price": "Environ 15-20 EUR",
+    "description": "Programme en 4 phases pour retrouver son energie. Edition Mango, sorti en 2026. Livre recent.",
+    "audience": "Marche francophone, nouveaute 2026"
+  },
+  {
+    "name": "Arreter le sucre - 10 jours pour changer - Dominique Gassin",
+    "type": "Livre",
+    "url": "https://eyrolles.com/Loisirs/Livre/arreter-le-sucre-9782092791202/",
+    "price": "Non communique",
+    "description": "Methode en 10 jours pour changer ses habitudes sucrees. Editions Eyrolles.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Arreter le sucre en 14 jours - Julien Lecours",
+    "type": "Ebook Kindle",
+    "url": "https://www.amazon.com/Arr%C3%AAter-sucre-14-jours-laddiction-ebook/dp/B0B4BCQRBP",
+    "price": "8.68 EUR (Kindle)",
+    "description": "Methode unique pour eliminer l'addiction au sucre en 14 jours. Format Kindle.",
+    "audience": "Marche francophone, Amazon"
+  },
+  {
+    "name": "Supprimer facilement vos envies de sucre en 21 jours",
+    "type": "Ebook Kindle",
+    "url": "https://www.amazon.com/dp/B09QJT238G",
+    "price": "Environ 5-10 EUR (Kindle)",
+    "description": "Guide pour supprimer les envies de sucre et ameliorer le metabolisme en 21 jours.",
+    "audience": "Marche francophone, Amazon"
+  },
+  {
+    "name": "J'arrete le sucre en 7 jours - Dr Pierre Nys",
+    "type": "Livre / Ebook",
+    "url": "https://www.editionsleduc.com/produit/1767/9791028513948/j-arrete-le-sucre-en-7-jours-c-est-malin",
+    "price": "Environ 6 EUR (poche)",
+    "description": "Programme en 7 jours pour dire stop a son addiction au sucre et retrouver la ligne. Editions Leduc, collection C'est malin.",
+    "audience": "Marche francophone, auteur medecin"
+  },
+  {
+    "name": "J'arrete le sucre ! - Valerie Espinasse",
+    "type": "Livre",
+    "url": "https://www.decitre.fr/livres/j-arrete-le-sucre-liberez-vous-de-votre-addiction-et-retrouvez-la-forme-9782290129371.html",
+    "price": "6.70 EUR (poche) / 3.87 EUR (occasion)",
+    "description": "Se liberer de son addiction et retrouver la forme. Format poche accessible.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "1 mois pour se liberer du sucre - Docteur BonneBouffe",
+    "type": "Livre",
+    "url": "https://docteurbonnebouffe.com/1-mois-pour-se-liberer-du-sucre/",
+    "price": "Non communique",
+    "description": "Livre pour diminuer le sucre en 28 jours. Par Nathalie (Docteur BonneBouffe), blogueuse nutrition influente.",
+    "audience": "Marche francophone, blog populaire"
+  },
+  {
+    "name": "Bon sucre, mauvais sucre - Allen Carr",
+    "type": "Livre",
+    "url": "https://www.librairiecoiffard.fr/livre/16876327-bon-sucre-mauvais-sucre",
+    "price": "Environ 7-8 EUR (Pocket)",
+    "description": "Se liberer du sucre et retrouver une bonne sante. Methode Allen Carr (celebre pour l'arret du tabac) appliquee au sucre.",
+    "audience": "International, methode Allen Carr mondialement connue"
+  },
+  {
+    "name": "Arreter le sucre: La methode efficace pour s'en liberer en douceur - Marion Philippe",
+    "type": "Livre",
+    "url": "https://www.amazon.fr/Arr%C3%AAter-sucre-m%C3%A9thode-efficace-lib%C3%A9rer/dp/B0C1JBJJLC",
+    "price": "Non communique",
+    "description": "Methode douce pour se liberer du sucre progressivement. Disponible sur Amazon.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Enorme - Anna Roy",
+    "type": "Livre / Temoignage",
+    "url": "https://www.santemagazine.fr/minceur/regimes-minceur/anna-roy-jai-perdu-40-kilos-en-arretant-le-sucre-video-1109466",
+    "price": "Environ 18-20 EUR",
+    "description": "Temoignage de la sage-femme Anna Roy qui a perdu 40 kilos en arretant le sucre. Succes mediatique important en 2025.",
+    "audience": "Grand public francophone, forte mediatisation"
+  },
+  {
+    "name": "Sweet Control - So.lab",
+    "type": "Complement alimentaire (gelules)",
+    "url": "https://solab-sante.com/products/sweet-control-1",
+    "price": "Non communique (lot de 3 disponible)",
+    "description": "Complement alimentaire anti-sucre pour reguler la glycemie. Valide par des pharmaciens. Cree par un pharmacien.",
+    "audience": "France, disponible en pharmacie"
+  },
+  {
+    "name": "Sweet Block - Spray anti-sucre So.lab",
+    "type": "Complement alimentaire (spray oral)",
+    "url": "https://solab-sante.com/en/products/spray-stop-sucre",
+    "price": "14.90 EUR",
+    "description": "Spray anti-sucre a effet immediat. Anti-sucre n1 en pharmacie. Formule a base de Gymnema et Chrome. Stoppe les envies en quelques secondes.",
+    "audience": "France, anti-sucre n1 en pharmacie"
+  },
+  {
+    "name": "Gymnema sylvestre - NutriLife Shop",
+    "type": "Complement alimentaire (gelules)",
+    "url": "http://www.nutrilifeshop.com/products/gymnema-sylvestre",
+    "price": "Non communique (60 gelules, 400mg)",
+    "description": "Gymnema sylvestre pour reduire les envies de sucre. Plante ayurvedique reconnue.",
+    "audience": "Europe francophone"
+  },
+  {
+    "name": "Zero Sucre (Berberine) - SFB Laboratoires",
+    "type": "Complement alimentaire (gelules)",
+    "url": "https://www.sfb.fr/berberine-chrome-zero-sucre.html",
+    "price": "29.10 EUR (75 gelules) / 55 EUR (150 gelules)",
+    "description": "Complement a base de berberine et chrome pour le maintien d'une glycemie normale. Fabrication francaise.",
+    "audience": "France, laboratoire SFB"
+  },
+  {
+    "name": "60 Gelules Stop Sucre - Gold and Care",
+    "type": "Complement alimentaire (gelules)",
+    "url": "https://www.goldandcare.com/produit/gelules-stop-sucre/",
+    "price": "24.90 EUR (cure 1 mois)",
+    "description": "4 actifs : Gymnema, Chrome, Berberine, Kudzu. Chrome contribue au maintien d'une glycemie normale.",
+    "audience": "France"
+  },
+  {
+    "name": "Mincifine Gommes Anti-Fringales - Fleurance Nature",
+    "type": "Complement alimentaire (gommes)",
+    "url": "https://www.biosantesenior.fr/produit-minceur-drainant/281244-mincifine-gommes-anti-fringales-80gr-fleurance-nature.html",
+    "price": "Non communique (80g)",
+    "description": "Gommes anti-fringales a base de gymnema et chrome. Format gomme innovant pour objectif silhouette.",
+    "audience": "France, marque Fleurance Nature"
+  },
+  {
+    "name": "SHUGEEZE Sugar Craving Suppressant Spray",
+    "type": "Complement alimentaire (spray oral)",
+    "url": "https://www.amazon.com/SHUGEEZE-Sugar-Craving-Suppressant-Spray/dp/B0DWCC6LLX",
+    "price": "Non communique",
+    "description": "Spray oral suppresseur d'envies de sucre. Action rapide. Disponible sur Amazon US.",
+    "audience": "Marche americain, Amazon"
+  },
+  {
+    "name": "Gymnema & Chrome - Anastore/Supersmart",
+    "type": "Complement alimentaire (gelules)",
+    "url": "https://www.les-calories.com/showroom/d/produits-services/gymnema-chrome-400-mg-60-gelules",
+    "price": "Environ 10-15 EUR (60 gelules)",
+    "description": "400 mg / 60 gelules. Titre a 100 mg en acide gymnemique. Regule la glycemie. Note 4.1/5 avec 194 avis.",
+    "audience": "194 avis, marche francophone"
+  },
+  {
+    "name": "BerbeGlucid - Zenement",
+    "type": "Complement alimentaire (gelules)",
+    "url": "https://zenement.com/products/berbeglucid-with-berberine-mulberry-cinnamon-chromium-and-probiotic-90-vegan-capsules",
+    "price": "26.83 EUR (90 gelules)",
+    "description": "Formule complete : Berberine, Murier, Cannelle, Chrome et Probiotique. 90 gelules veganes.",
+    "audience": "Europe"
+  },
+  {
+    "name": "DEFI DETOX SANS SUCRE (Groupe Facebook)",
+    "type": "Communaute Facebook",
+    "url": "https://www.facebook.com/groups/215821516013688/",
+    "price": "Gratuit",
+    "description": "Groupe Facebook francophone dedie au defi detox sans sucre.",
+    "audience": "Francophone"
+  },
+  {
+    "name": "The 28-Day Sugar Free Challenge (Groupe Facebook)",
+    "type": "Communaute Facebook",
+    "url": "https://www.facebook.com/groups/2110322679278215/",
+    "price": "Gratuit",
+    "description": "Groupe Facebook anglophone pour le challenge 28 jours sans sucre.",
+    "audience": "International anglophone"
+  },
+  {
+    "name": "22 Day Sugar DETOX (Groupe Facebook)",
+    "type": "Communaute Facebook",
+    "url": "https://www.facebook.com/groups/945718883742410/",
+    "price": "Gratuit",
+    "description": "Groupe public Facebook de 725 membres pour un defi detox sucre de 22 jours.",
+    "audience": "725 membres"
+  },
+  {
+    "name": "Kick the Crave - 5 Days FREE Sugar Challenge (Groupe Facebook)",
+    "type": "Communaute Facebook",
+    "url": "https://www.facebook.com/groups/651893030770690/",
+    "price": "Gratuit",
+    "description": "Challenge gratuit de 5 jours pour se debarrasser des envies de sucre. Groupe actif avec posts quotidiens.",
+    "audience": "Anglophone"
+  },
+  {
+    "name": "Joe Wicks - 7 Day Sugar Free Challenge",
+    "type": "Challenge communautaire (Facebook/Instagram)",
+    "url": "https://www.facebook.com/JoeWicksTheBodyCoach/",
+    "price": "Gratuit (challenge) + programmes payants",
+    "description": "Challenge de 7 jours sans sucre par Joe Wicks (The Body Coach). Transparence totale sur l'alimentation quotidienne.",
+    "audience": "Joe Wicks : 4M+ followers, The Body Coach"
+  },
+  {
+    "name": "SUGAR FREE (Forum)",
+    "type": "Forum communautaire",
+    "url": "http://sugar-free.forumactif.com/",
+    "price": "Gratuit",
+    "description": "Forum francophone dedie au mode de vie sans sucre. Sur ForumActif.",
+    "audience": "Francophone, forum"
+  },
+  {
+    "name": "No Sugar Challenge (site communautaire)",
+    "type": "Site web communautaire",
+    "url": "https://no-sugar-challenge.com/",
+    "price": "Gratuit (app Sugarless)",
+    "description": "Site communautaire pour arreter le sucre. Suivi de progres, support communautaire, challenge sans sucre.",
+    "audience": "International"
+  },
+  {
+    "name": "Sans Sucre S'il Vous Plait (blog)",
+    "type": "Blog / Media",
+    "url": "https://sanssucresilvousplait.com/",
+    "price": "Gratuit (contenu)",
+    "description": "Blog francophone dedie a la desintoxication du sucre. Guides pratiques comme 'Comment se desintoxiquer du sucre en 10 jours'.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Stop Sucre (blog/media)",
+    "type": "Blog / Media / YouTube",
+    "url": "https://stopsucre.fr/",
+    "price": "Gratuit",
+    "description": "Site francophone pour lutter contre l'addiction au sucre. Articles et videos pour vaincre definitivement l'addiction.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "Helena - 30 JOURS SANS SUCRE (YouTube)",
+    "type": "Chaine YouTube",
+    "url": "https://www.youtube.com/watch?v=vFHGDLH-JHc",
+    "price": "Gratuit",
+    "description": "Video challenge '30 jours sans sucre - le challenge qui a change ma vie'. Humour et vulgarisation.",
+    "audience": "363.5K vues, 26.3K likes"
+  },
+  {
+    "name": "Noemie Nutrition (YouTube)",
+    "type": "Chaine YouTube",
+    "url": "https://www.youtube.com/@NoemieNutrition",
+    "price": "Gratuit",
+    "description": "Plusieurs videos sur l'addiction au sucre : 'Accro au sucre, pourquoi c'est si difficile' (11.6K vues), 'Arreter le sucre pour maigrir' (105.7K vues), 'J'arrete le sucre 30 jours' (208.9K vues).",
+    "audience": "100K+ vues par video, chaine nutrition francophone"
+  },
+  {
+    "name": "BMoove - La Chaine Sante (YouTube)",
+    "type": "Chaine YouTube",
+    "url": "https://www.youtube.com/watch?v=tvSVAoTVA_Y",
+    "price": "Gratuit",
+    "description": "Video 'Arreter le sucre pendant 21 jours : 7 consequences incroyables sur votre corps'. 1h04 de contenu approfondi.",
+    "audience": "97.6K vues, 2.3K likes"
+  },
+  {
+    "name": "Allo Docteurs (YouTube - France 5)",
+    "type": "Chaine YouTube / Media TV",
+    "url": "https://www.youtube.com/watch?v=cANshPyMMXs",
+    "price": "Gratuit",
+    "description": "Emission 'Addiction au sucre : comment combattre ses effets nefastes'. 1h39 d'emission TV complete.",
+    "audience": "90.4K vues, chaine France 5"
+  },
+  {
+    "name": "Sport Sante Nutrition (YouTube + Podcast)",
+    "type": "Chaine YouTube + Podcast",
+    "url": "https://www.youtube.com/watch?v=jgCnFbUBvJw",
+    "price": "Gratuit",
+    "description": "Episode recent (mars 2026) : 'Addiction au sucre : Le protocole pour s'en liberer (meme sans volonte)'. 56 min.",
+    "audience": "YouTube + Apple Podcasts"
+  },
+  {
+    "name": "Kelsey Rose - Beat Sugar Addiction (YouTube EN)",
+    "type": "Chaine YouTube",
+    "url": "https://www.youtube.com/watch?v=VZ6mxWWcvTs",
+    "price": "Gratuit",
+    "description": "Video 'This is how you'll beat your sugar addiction in 2026 (step-by-step guide!)'. Guide pratique etape par etape.",
+    "audience": "15.2K vues, 613 likes"
+  },
+  {
+    "name": "Noemie de Saint-Sernin (YouTube)",
+    "type": "Chaine YouTube",
+    "url": "https://noemiedesaintsernin.com/mes-videos/developpement-personnel/4-etapes-pour-decrocher-du-sucre/",
+    "price": "Gratuit",
+    "description": "Video 'Les 4 etapes pour decrocher du sucre' avec Elodie Beaucent, coach en nutrition. Approche developpement personnel.",
+    "audience": "Marche francophone"
+  },
+  {
+    "name": "93 Jours - Le Defi Sans Sucres Ajoutes (Podcast)",
+    "type": "Podcast",
+    "url": "https://open.spotify.com/show/1iWCTgVC2WBVuPsji1MjnL",
+    "price": "Gratuit",
+    "description": "Podcast dedie au defi sans sucres ajoutes. Rencontres avec des experts et temoignages. Par Sunday Night Productions.",
+    "audience": "Spotify, francophone"
+  },
+  {
+    "name": "Metamorphose - Episodes Sucre (Podcast)",
+    "type": "Podcast",
+    "url": "https://shows.acast.com/metamorphose-le-podcast-qui-eveille-la-conscience/episodes/mieux-gerer-son-rapport-au-sucre-avec-le-dr-paul-dupont",
+    "price": "Gratuit",
+    "description": "Podcast d'Anne Ghesquiere. Plusieurs episodes dedies au sucre : Dr Paul Dupont (decrocher du sucre), Dr Yann Rougier (5 reflexes pour se passer du sucre).",
+    "audience": "Podcast francophone majeur, des millions d'ecoutes"
+  },
+  {
+    "name": "Tout sur elles - Episode Anna Roy (Podcast Slate)",
+    "type": "Podcast",
+    "url": "https://m.slate.fr/audio/tout-sur-elles/enorme-anna-roy-perte-poids-regime-addiction-sevrage-sucre-34",
+    "price": "Gratuit",
+    "description": "Episode 'Enorme par Anna Roy : se sevrer du sucre pour ne pas mourir'. 30 min. Temoignage puissant.",
+    "audience": "Slate Audio, media francophone"
+  },
+  {
+    "name": "France Bleu - Bienvenue chez vous (Podcast Radio France)",
+    "type": "Podcast / Radio",
+    "url": "https://www.radiofrance.fr/francebleu/podcasts/bienvenue-chez-vous-les-experts-bien-etre/addiction-au-sucre-comment-s-en-liberer-6682736",
+    "price": "Gratuit",
+    "description": "Deux episodes : 'Addiction au sucre : comment s'en liberer' et 'Reduire sa dependance au sucre : 5 conseils pratiques'. Par des experts bien-etre.",
+    "audience": "Radio France, audience nationale"
+  },
+  {
+    "name": "France Inter - Grand bien vous fasse (Podcast)",
+    "type": "Podcast / Radio",
+    "url": "https://www.radiofrance.fr/franceinter/podcasts/grand-bien-vous-fasse/grand-bien-vous-fasse-du-mardi-11-mars-2025-3131810",
+    "price": "Gratuit",
+    "description": "Episode 'L'addiction au sucre existe-t-elle vraiment ? Le debat est lance'. Debat d'experts.",
+    "audience": "France Inter, audience nationale majeure"
+  },
+  {
+    "name": "Empowered Living NYC - Sugar Free Challenge 2026",
+    "type": "Challenge communautaire (Instagram)",
+    "url": "https://www.instagram.com/empoweredlivingnyc/",
+    "price": "Non communique",
+    "description": "Challenge Sugar Free 2026 annonce sur Instagram. Communaute lifestyle sans sucre basee a New York.",
+    "audience": "Instagram, communaute NYC"
+  },
+  {
+    "name": "Salon Sugar Free (evenement physique)",
+    "type": "Evenement / Salon",
+    "url": "https://www.lanutrition.fr/sugar-free-deuxieme-edition-du-salon-dedie-au-sans-sucre-en-france",
+    "price": "Non communique",
+    "description": "Deuxieme edition du salon dedie au sans sucre en France. Evenement physique regroupant acteurs du secteur.",
+    "audience": "France, evenement annuel"
+  }
+]
