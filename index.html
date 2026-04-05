@@ -6,214 +6,473 @@
     <title>UnSugar — Dashboard Projet</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0f0f0f;
-            color: #e0e0e0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
+            background: #0f0f0f; color: #e0e0e0; height: 100vh;
+            display: flex; flex-direction: column;
         }
-
-        /* ── Header ── */
         .header {
-            padding: 20px 32px;
-            border-bottom: 1px solid #2a2a2a;
-            display: flex;
-            align-items: center;
-            gap: 14px;
+            padding: 20px 32px; border-bottom: 1px solid #2a2a2a;
+            display: flex; align-items: center; gap: 14px;
         }
-
         .header .logo {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
+            width: 36px; height: 36px; background: linear-gradient(135deg, #22c55e, #16a34a);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px;
         }
-
-        .header h1 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .header .subtitle {
-            font-size: 13px;
-            color: #555;
-            margin-left: 8px;
-            padding-left: 12px;
-            border-left: 1px solid #333;
-        }
-
-        /* ── Tabs ── */
+        .header h1 { font-size: 20px; font-weight: 700; color: #fff; }
+        .header .subtitle { font-size: 13px; color: #555; margin-left: 8px; padding-left: 12px; border-left: 1px solid #333; }
         .tabs {
-            display: flex;
-            border-bottom: 1px solid #2a2a2a;
-            padding: 0 32px;
-            gap: 0;
-            overflow-x: auto;
+            display: flex; border-bottom: 1px solid #2a2a2a; padding: 0 32px;
+            gap: 0; overflow-x: auto; flex-shrink: 0;
         }
-
         .tab {
-            padding: 14px 24px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #666;
-            cursor: pointer;
-            border-bottom: 2px solid transparent;
-            transition: all 0.15s;
-            white-space: nowrap;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            padding: 14px 24px; font-size: 14px; font-weight: 600; color: #666;
+            cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.15s;
+            white-space: nowrap; display: flex; align-items: center; gap: 8px;
         }
-
         .tab:hover { color: #aaa; }
-
-        .tab.active {
-            color: #22c55e;
-            border-bottom-color: #22c55e;
-        }
-
-        .tab .tab-icon { font-size: 16px; }
-
-        /* ── Content ── */
-        .content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 32px;
-        }
-
+        .tab.active { color: #22c55e; border-bottom-color: #22c55e; }
+        .content { flex: 1; overflow-y: auto; padding: 32px; }
         .panel { display: none; }
         .panel.active { display: block; }
-
-        /* ── Empty state ── */
-        .empty-state {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 80px 20px;
-            gap: 16px;
-        }
-
-        .empty-state .empty-icon {
-            font-size: 48px;
-            opacity: 0.5;
-        }
-
-        .empty-state h2 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .empty-state p {
-            font-size: 14px;
-            color: #555;
-            text-align: center;
-            max-width: 400px;
-            line-height: 1.5;
-        }
-
-        /* ── Scrollbar ── */
         .content::-webkit-scrollbar { width: 5px; }
         .content::-webkit-scrollbar-track { background: transparent; }
         .content::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+        /* ── Cards ── */
+        .section-title {
+            font-size: 13px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 1px; color: #22c55e; margin-bottom: 16px; margin-top: 32px;
+        }
+        .section-title:first-child { margin-top: 0; }
+        .card {
+            background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px;
+            padding: 20px; margin-bottom: 12px;
+        }
+        .card h3 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .card p, .card li { font-size: 14px; line-height: 1.6; color: #bbb; }
+        .card ul { padding-left: 20px; }
+        .card li { margin-bottom: 4px; }
+        .card .tag {
+            display: inline-block; padding: 3px 10px; border-radius: 6px;
+            font-size: 11px; font-weight: 600; margin-right: 6px; margin-bottom: 4px;
+        }
+        .tag-green { background: #1e3a2a; color: #22c55e; }
+        .tag-blue { background: #1a2530; color: #38bdf8; }
+        .tag-orange { background: #2a2518; color: #f59e0b; }
+        .tag-red { background: #2a1818; color: #ef4444; }
+        .tag-purple { background: #251a30; color: #a855f7; }
+        .card a { color: #22c55e; text-decoration: none; }
+        .card a:hover { text-decoration: underline; }
+
+        /* ── Table ── */
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+        th { text-align: left; font-size: 11px; font-weight: 600; color: #666; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 12px; border-bottom: 1px solid #2a2a2a; }
+        td { font-size: 13px; padding: 10px 12px; border-bottom: 1px solid #1a1a1a; color: #ccc; }
+        tr:hover td { background: #151515; }
+
+        /* ── Todo ── */
+        .todo-item {
+            display: flex; align-items: center; gap: 12px; padding: 12px 16px;
+            background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; margin-bottom: 8px;
+        }
+        .todo-check { font-size: 18px; }
+        .todo-text { flex: 1; font-size: 14px; color: #ccc; }
+        .todo-text.done { text-decoration: line-through; color: #555; }
+        .todo-priority { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; }
+
+        /* ── File cards ── */
+        .file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+        .file-card {
+            background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px;
+            padding: 20px; cursor: pointer; transition: border-color 0.15s;
+        }
+        .file-card:hover { border-color: #22c55e; }
+        .file-card .file-icon { font-size: 32px; margin-bottom: 12px; }
+        .file-card .file-name { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+        .file-card .file-desc { font-size: 12px; color: #666; }
+
+        /* ── Influencer cards ── */
+        .inf-card {
+            background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px;
+            padding: 16px 20px; margin-bottom: 8px; display: flex; align-items: center; gap: 16px;
+        }
+        .inf-avatar {
+            width: 44px; height: 44px; border-radius: 50%; display: flex;
+            align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
+        }
+        .inf-info { flex: 1; }
+        .inf-name { font-size: 14px; font-weight: 600; color: #fff; }
+        .inf-desc { font-size: 12px; color: #888; margin-top: 2px; }
+        .inf-audience { font-size: 12px; color: #22c55e; font-weight: 600; }
+
+        /* ── Checklist ── */
+        .check-item {
+            display: flex; align-items: flex-start; gap: 10px; padding: 10px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .check-box { font-size: 16px; margin-top: 2px; }
+        .check-label { font-size: 14px; color: #ccc; }
+        .check-label strong { color: #fff; }
     </style>
 </head>
 <body>
 
-<!-- Header -->
 <div class="header">
-    <div class="logo">🍃</div>
+    <div class="logo">&#x1F33F;</div>
     <h1>UnSugar</h1>
     <span class="subtitle">Dashboard Projet</span>
 </div>
 
-<!-- Tabs -->
 <div class="tabs">
-    <div class="tab active" onclick="switchTab('tech')">
-        <span class="tab-icon">⚙️</span> Tech
+    <div class="tab active" onclick="switchTab('tech')"><span>&#x2699;&#xFE0F;</span> Tech</div>
+    <div class="tab" onclick="switchTab('todo')"><span>&#x2705;</span> To-Do</div>
+    <div class="tab" onclick="switchTab('fichiers')"><span>&#x1F4C1;</span> Fichiers</div>
+    <div class="tab" onclick="switchTab('influenceurs')"><span>&#x1F465;</span> Influenceurs</div>
+    <div class="tab" onclick="switchTab('features')"><span>&#x1F680;</span> Features</div>
+    <div class="tab" onclick="switchTab('publication')"><span>&#x1F4F1;</span> Test & Approbation</div>
+</div>
+
+<div class="content">
+
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 1 : TECH                           -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel active" id="panel-tech">
+
+    <div class="section-title">Architecture</div>
+    <div class="card">
+        <h3>Stack technique</h3>
+        <table>
+            <tr><th>Couche</th><th>Technologie</th><th>Usage</th></tr>
+            <tr><td>Frontend Web</td><td>HTML / CSS / JavaScript</td><td>MVP web, chat temps reel, agent IA</td></tr>
+            <tr><td>Frontend Mobile</td><td>React Native / Expo</td><td>App iOS et Android</td></tr>
+            <tr><td>Backend / BDD</td><td>Supabase (PostgreSQL)</td><td>Auth, base de donnees, realtime WebSocket</td></tr>
+            <tr><td>Vocal</td><td>Daily.co</td><td>Salons vocaux (WebView MVP, SDK natif en prod)</td></tr>
+            <tr><td>Agent IA</td><td>OpenAI GPT-4o-mini</td><td>Coach nutrition, contexte 30 messages par user</td></tr>
+            <tr><td>Hosting Web</td><td>GitHub Pages</td><td>Deploiement web gratuit</td></tr>
+            <tr><td>Hosting Mobile</td><td>App Store + Play Store</td><td>Distribution apps natives</td></tr>
+        </table>
     </div>
-    <div class="tab" onclick="switchTab('todo')">
-        <span class="tab-icon">✅</span> To-Do
+
+    <div class="section-title">Base de donnees Supabase</div>
+    <div class="card">
+        <h3>Schema</h3>
+        <table>
+            <tr><th>Table</th><th>Colonnes principales</th><th>Role</th></tr>
+            <tr><td>users</td><td>id, email, first_name, avatar_color</td><td>Utilisatrices</td></tr>
+            <tr><td>channels</td><td>id, name, description</td><td>Salons de discussion</td></tr>
+            <tr><td>messages</td><td>id, channel_id, user_id, content, target_user_id</td><td>Messages (texte + IA)</td></tr>
+            <tr><td>config</td><td>key, value</td><td>Configuration (cle OpenAI)</td></tr>
+        </table>
     </div>
-    <div class="tab" onclick="switchTab('fichiers')">
-        <span class="tab-icon">📁</span> Fichiers
+
+    <div class="section-title">Liens des services</div>
+    <div class="card">
+        <ul>
+            <li><strong>App Web live :</strong> <a href="https://samybelgarbifr-design.github.io/sugarfree/" target="_blank">samybelgarbifr-design.github.io/sugarfree</a></li>
+            <li><strong>Dashboard :</strong> <a href="https://samybelgarbifr-design.github.io/unsugar-dashboard/" target="_blank">samybelgarbifr-design.github.io/unsugar-dashboard</a></li>
+            <li><strong>Repo Web :</strong> <a href="https://github.com/samybelgarbifr-design/sugarfree" target="_blank">github.com/samybelgarbifr-design/sugarfree</a></li>
+            <li><strong>Repo Mobile :</strong> <a href="https://github.com/samybelgarbifr-design/unsugar-mobile" target="_blank">github.com/samybelgarbifr-design/unsugar-mobile</a></li>
+            <li><strong>Supabase :</strong> <a href="https://supabase.com/dashboard/project/gemzzrkumdqmjgtdlzmv" target="_blank">Dashboard Supabase</a></li>
+            <li><strong>Daily.co :</strong> <a href="https://dashboard.daily.co" target="_blank">Dashboard Daily.co</a> (domaine : sugarfree.daily.co)</li>
+            <li><strong>Salon vocal :</strong> <a href="https://sugarfree.daily.co/discussion-libre" target="_blank">sugarfree.daily.co/discussion-libre</a></li>
+        </ul>
     </div>
-    <div class="tab" onclick="switchTab('influenceurs')">
-        <span class="tab-icon">👥</span> Influenceurs
-    </div>
-    <div class="tab" onclick="switchTab('features')">
-        <span class="tab-icon">🚀</span> Features
-    </div>
-    <div class="tab" onclick="switchTab('publication')">
-        <span class="tab-icon">📱</span> Test & Approbation
+
+    <div class="section-title">Couts mensuels</div>
+    <div class="card">
+        <table>
+            <tr><th>Service</th><th>Plan</th><th>Cout</th></tr>
+            <tr><td>Supabase</td><td>Free (Pro a 25$/mois pour 1000+ users)</td><td>0 - 25 $</td></tr>
+            <tr><td>Daily.co</td><td>10 000 min gratuites/mois</td><td>0 $</td></tr>
+            <tr><td>OpenAI</td><td>Pay-as-you-go GPT-4o-mini</td><td>~5-20 $</td></tr>
+            <tr><td>GitHub Pages</td><td>Gratuit</td><td>0 $</td></tr>
+            <tr><td>Apple Developer</td><td>Annuel</td><td>99 $/an</td></tr>
+            <tr><td>Google Play</td><td>One-time</td><td>25 $ (une fois)</td></tr>
+        </table>
     </div>
 </div>
 
-<!-- Content -->
-<div class="content">
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 2 : TO-DO                          -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel" id="panel-todo">
 
-    <!-- Tech -->
-    <div class="panel active" id="panel-tech">
-        <div class="empty-state">
-            <div class="empty-icon">⚙️</div>
-            <h2>Tech Stack</h2>
-            <p>Architecture technique, technologies utilisées, APIs, base de données, hébergement.</p>
-        </div>
+    <div class="section-title">Fait</div>
+
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">MVP web : login + chat temps reel + salons</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Salon vocal Daily.co (Discussion libre)</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Agent IA (Aurora/UnSugar Coach) avec GPT-4o-mini</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Conversations IA privees par utilisatrice</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Deploiement web GitHub Pages</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Wireframe desktop + wireframe mobile iPhone 14</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Scraping 385 profils Instagram (20 hashtags sante)</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Identification 28 ambassadrices / leaders d'opinion</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">App mobile React Native / Expo creee et pushee</span><span class="todo-priority tag-green">Done</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2705;</span><span class="todo-text done">Strategie produit (product.md) documentee</span><span class="todo-priority tag-green">Done</span></div>
+
+    <div class="section-title">A faire — Priorite haute</div>
+
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Finaliser et tester l'app mobile sur iPhone via Expo Go</span><span class="todo-priority tag-red">P0</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Rendre le site web responsive mobile</span><span class="todo-priority tag-red">P0</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Implementer le check-in + streak (feature #1)</span><span class="todo-priority tag-red">P0</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Creer la landing page de vente + paiement Stripe (29,99 EUR)</span><span class="todo-priority tag-red">P0</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Choisir le nom definitif (UnSugar / Unsugirls / autre)</span><span class="todo-priority tag-red">P0</span></div>
+
+    <div class="section-title">A faire — Priorite moyenne</div>
+
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Bouton SOS Craving (connecte a l'agent IA)</span><span class="todo-priority tag-orange">P1</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Buddy system (jumelage automatique a l'inscription)</span><span class="todo-priority tag-orange">P1</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Milestones partageables (stories Instagram auto-generees)</span><span class="todo-priority tag-orange">P1</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Contacter les 28 ambassadrices identifiees</span><span class="todo-priority tag-orange">P1</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Utiliser Heepsy (49$/mois) pour sourcer 100 micro-influenceuses qualifiees</span><span class="todo-priority tag-orange">P1</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Creer les comptes Apple Developer (99$/an) et Google Play (25$)</span><span class="todo-priority tag-orange">P1</span></div>
+
+    <div class="section-title">A faire — Priorite basse</div>
+
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Journal de transformation (energie, sommeil, humeur, peau)</span><span class="todo-priority tag-blue">P2</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Systeme de parrainage (-30% pour l'invitee, challenge gratuit pour la marraine)</span><span class="todo-priority tag-blue">P2</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Club Alumni (4,99 EUR/mois post-challenge)</span><span class="todo-priority tag-blue">P2</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Ceremonie de graduation jour 30 (live vocal + certificat)</span><span class="todo-priority tag-blue">P2</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Remplacer WebView Daily.co par SDK natif (pour App Store)</span><span class="todo-priority tag-blue">P2</span></div>
+    <div class="todo-item"><span class="todo-check">&#x2B1C;</span><span class="todo-text">Durcissement code + publication App Store / Play Store</span><span class="todo-priority tag-blue">P2</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 3 : FICHIERS                       -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel" id="panel-fichiers">
+
+    <div class="section-title">Wireframes</div>
+    <div class="file-grid">
+        <div class="file-card"><div class="file-icon">&#x1F5A5;</div><div class="file-name">wireframe-sugarfree.html</div><div class="file-desc">Wireframe desktop — interface de chat avec sidebar, salons, messages</div></div>
+        <div class="file-card"><div class="file-icon">&#x1F4F1;</div><div class="file-name">wireframe-unsugar-mobile.html</div><div class="file-desc">Wireframe mobile iPhone 14 — onglets, chat, vocal, profil, streak</div></div>
     </div>
 
-    <!-- To-Do -->
-    <div class="panel" id="panel-todo">
-        <div class="empty-state">
-            <div class="empty-icon">✅</div>
-            <h2>To-Do</h2>
-            <p>Toutes les tâches à réaliser pour le projet, organisées par priorité et statut.</p>
-        </div>
+    <div class="section-title">Documents strategie</div>
+    <div class="file-grid">
+        <div class="file-card"><div class="file-icon">&#x1F4CB;</div><div class="file-name">product.md</div><div class="file-desc">Strategie produit complete : boucles d'engagement, monetisation, priorites dev</div></div>
+        <div class="file-card"><div class="file-icon">&#x1F50D;</div><div class="file-name">scrapping.md</div><div class="file-desc">3 strategies de sourcing micro-influenceuses : Heepsy, scraping followers, Hunter.io</div></div>
+        <div class="file-card"><div class="file-icon">&#x26A0;</div><div class="file-name">probleme.md</div><div class="file-desc">Probleme du contexte utilisateur pour l'agent IA (30 messages vs historique complet)</div></div>
     </div>
 
-    <!-- Fichiers -->
-    <div class="panel" id="panel-fichiers">
-        <div class="empty-state">
-            <div class="empty-icon">📁</div>
-            <h2>Fichiers</h2>
-            <p>Wireframes, maquettes, documents de référence, assets du projet.</p>
-        </div>
+    <div class="section-title">Code source</div>
+    <div class="file-grid">
+        <div class="file-card"><div class="file-icon">&#x1F310;</div><div class="file-name">sugarfree/ (web)</div><div class="file-desc">index.html (login) + app.html (chat) + schema.sql</div></div>
+        <div class="file-card"><div class="file-icon">&#x1F4F2;</div><div class="file-name">unsugar-mobile/ (mobile)</div><div class="file-desc">App React Native/Expo — 5 ecrans, navigation, Supabase, Daily.co</div></div>
+        <div class="file-card"><div class="file-icon">&#x1F4CA;</div><div class="file-name">unsugar-dashboard/ (dashboard)</div><div class="file-desc">Ce dashboard — pilotage projet</div></div>
     </div>
 
-    <!-- Influenceurs -->
-    <div class="panel" id="panel-influenceurs">
-        <div class="empty-state">
-            <div class="empty-icon">👥</div>
-            <h2>Influenceurs</h2>
-            <p>Leaders d'opinion, ambassadrices, micro-influenceuses identifiées pour le marketing.</p>
-        </div>
+    <div class="section-title">Google Sheets</div>
+    <div class="file-grid">
+        <div class="file-card" onclick="window.open('https://docs.google.com/spreadsheets/d/1nPd_Mn2MnOaB74pwWwHj8CxawhsCPtDSXDCXyGuAvm8/edit')"><div class="file-icon">&#x1F4C4;</div><div class="file-name">Ambassadrices & Leaders d'opinion</div><div class="file-desc">28 profils enrichis avec contacts — Cliquer pour ouvrir</div></div>
+        <div class="file-card" onclick="window.open('https://docs.google.com/spreadsheets/d/1fJmSX_v8aCcsLI5Kmy1B_RgL5E10h2guK7JrW98Z3AM/edit')"><div class="file-icon">&#x1F4C4;</div><div class="file-name">Micro-influenceuses Instagram</div><div class="file-desc">74 micro-influenceuses filtrees (5K-100K followers) — Cliquer pour ouvrir</div></div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 4 : INFLUENCEURS                   -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel" id="panel-influenceurs">
+
+    <div class="section-title">Leaders d'opinion (Tier 1)</div>
+
+    <div class="inf-card"><div class="inf-avatar" style="background:#8b5cf6">LW</div><div class="inf-info"><div class="inf-name">Lucile Woodward</div><div class="inf-desc">Coach sportive, programme "Detox au Sucre" en vente sur son site</div></div><div class="inf-audience">700K+</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#3b82f6">RA</div><div class="inf-info"><div class="inf-name">Dr Reginald Allouche</div><div class="inf-desc">Auteur "Sucre l'ennemi public n1" (Albin Michel), invite C a Vous, LEGEND</div></div><div class="inf-audience">Medias nationaux</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#ec4899">AG</div><div class="inf-info"><div class="inf-name">Anne Ghesquiere</div><div class="inf-desc">Podcast "Metamorphose" — episodes sur le sucre (69K vues)</div></div><div class="inf-audience">200K+</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#f59e0b">KR</div><div class="inf-info"><div class="inf-name">Karoline.Ro</div><div class="inf-desc">YouTube "Comment enfin arreter le sucre" = 206K vues</div></div><div class="inf-audience">200K+</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#06b6d4">NN</div><div class="inf-info"><div class="inf-name">Noemie Nutrition</div><div class="inf-desc">Dieteticienne YouTube, guide "3 jours sans sucre"</div></div><div class="inf-audience">100K+</div></div>
+
+    <div class="section-title">Specialistes du sucre (Tier 2)</div>
+
+    <div class="inf-card"><div class="inf-avatar" style="background:#22c55e">BP</div><div class="inf-info"><div class="inf-name">Berengere Philippon (@0sucre_et_igbas)</div><div class="inf-desc">Coach nutrition certifiee, 3 livres Larousse, 120K+ exemplaires vendus. LA specialiste sans sucre</div></div><div class="inf-audience">50K+</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#a855f7">MP</div><div class="inf-info"><div class="inf-name">Mathilde Pottier (La Cetosee)</div><div class="inf-desc">Guerie d'un cancer grace a l'alimentation sans sucre. Tel: 07 81 67 25 95</div></div><div class="inf-audience">10K+</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#f43f5e">VE</div><div class="inf-info"><div class="inf-name">Valerie Espinasse</div><div class="inf-desc">Dr en pharmacie, auteure "J'arrete le sucre !" (J'ai Lu). Tel: 01 55 93 15 17</div></div><div class="inf-audience">50K+</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#2dd4bf">PN</div><div class="inf-info"><div class="inf-name">Dr Pierre Nys</div><div class="inf-desc">Endocrinologue, auteur "J'arrete le sucre en 7 jours" (Leduc)</div></div><div class="inf-audience">Presse</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#fbbf24">PD</div><div class="inf-info"><div class="inf-name">Dr Paul Dupont</div><div class="inf-desc">Invite Metamorphose "Decrocher du sucre" = 69K vues</div></div><div class="inf-audience">Medias</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#818cf8">YR</div><div class="inf-info"><div class="inf-name">Dr Yann Rougier</div><div class="inf-desc">"5 reflexes pour se passer du sucre", invite Metamorphose</div></div><div class="inf-audience">Medias</div></div>
+
+    <div class="section-title">Creatrices de contenu Instagram (Tier 3)</div>
+
+    <div class="inf-card"><div class="inf-avatar" style="background:#ef4444">MS</div><div class="inf-info"><div class="inf-name">@monsieursucree</div><div class="inf-desc">100% dedie au sevrage du sucre, temoignage personnel</div></div><div class="inf-audience">5-20K</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#f97316">SF</div><div class="inf-info"><div class="inf-name">@sainemans (Florence Fraux)</div><div class="inf-desc">Coach alimentation, quiz "Quelle addict au sucre es-tu ?"</div></div><div class="inf-audience">5-20K</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#eab308">EK</div><div class="inf-info"><div class="inf-name">@endkoshop</div><div class="inf-desc">Creatrice d'une solution anti-addiction sucre</div></div><div class="inf-audience">5-20K</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#a78bfa">HB</div><div class="inf-info"><div class="inf-name">@happybody_byju</div><div class="inf-desc">Challenge stop sucre, ebook "10 recettes sans sucre raffine"</div></div><div class="inf-audience">5-50K</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#34d399">TD</div><div class="inf-info"><div class="inf-name">@tiaderoche</div><div class="inf-desc">Coach nutrition addiction au sucre</div></div><div class="inf-audience">5-20K</div></div>
+
+    <div class="section-title">YouTubeuses (Tier 4)</div>
+
+    <div class="inf-card"><div class="inf-avatar" style="background:#fb923c">DV</div><div class="inf-info"><div class="inf-name">Desencombre ta vie</div><div class="inf-desc">Challenge 21 jours sans sucre + bilan 18 mois apres = 22K vues. PARFAIT MATCH</div></div><div class="inf-audience">22K vues</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#c084fc">AL</div><div class="inf-info"><div class="inf-name">Amandine Leger</div><div class="inf-desc">"Pas de sucre pendant 1 semaine" = 46K vues</div></div><div class="inf-audience">46K vues</div></div>
+    <div class="inf-card"><div class="inf-avatar" style="background:#4ade80">BM</div><div class="inf-info"><div class="inf-name">BMoove (Wilfried Launay)</div><div class="inf-desc">"Sevrage du sucre : 3 effets secondaires" = 38K vues. Site: bmoove.com</div></div><div class="inf-audience">38K vues</div></div>
+
+    <div class="section-title">
+        <a href="https://docs.google.com/spreadsheets/d/1nPd_Mn2MnOaB74pwWwHj8CxawhsCPtDSXDCXyGuAvm8/edit" target="_blank" style="color:#22c55e">
+            Voir la liste complete sur Google Sheets &rarr;
+        </a>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 5 : FEATURES                       -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel" id="panel-features">
+
+    <div class="section-title">MVP — En place</div>
+
+    <div class="card">
+        <h3>&#x1F4AC; Chat temps reel</h3>
+        <p>5 salons : General, Recettes sans sucre, Motivation, Resultats & victoires, Questions au coach. Messages en temps reel via Supabase Realtime. Badges de messages non lus.</p>
+        <br><span class="tag tag-green">LIVE</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F50A; Salon vocal</h3>
+        <p>1 salon "Discussion libre" via Daily.co. Audio uniquement, video off par defaut. 10 000 minutes gratuites/mois (~16 appels d'1h a 10 personnes).</p>
+        <br><span class="tag tag-green">LIVE</span>
+    </div>
+    <div class="card">
+        <h3>&#x2728; Agent IA (UnSugar Coach)</h3>
+        <p>Coach nutrition GPT-4o-mini. Conversations privees par utilisatrice. Contexte persistant (30 derniers messages). Specialise sevrage sucre, bienveillant, jamais culpabilisant.</p>
+        <br><span class="tag tag-green">LIVE</span>
     </div>
 
-    <!-- Features -->
-    <div class="panel" id="panel-features">
-        <div class="empty-state">
-            <div class="empty-icon">🚀</div>
-            <h2>Features</h2>
-            <p>Fonctionnalités prévues pour l'application : check-in, streak, buddy system, SOS, etc.</p>
-        </div>
+    <div class="section-title">Boucle quotidienne — A developper</div>
+
+    <div class="card">
+        <h3>&#x1F525; Check-in + Streak</h3>
+        <p>Chaque matin, l'utilisatrice check-in. Compteur de jours consecutifs sans sucre affiche dans le chat. Mecanisme Duolingo/Snapchat.</p>
+        <br><span class="tag tag-red">Priorite #1</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F3AF; Micro-challenge du jour</h3>
+        <p>Jour 3 : "Lis les etiquettes de 5 produits". Jour 7 : "Cuisine un dessert sans sucre". Jour 14 : "Refuse un gateau au boulot". Structure le parcours.</p>
+        <br><span class="tag tag-orange">Priorite #2</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F6A8; Bouton SOS Craving</h3>
+        <p>Bouton rouge quand elle est sur le point de craquer. Declenche : reponse IA immediate + notification buddy + contenu motivationnel.</p>
+        <br><span class="tag tag-orange">Priorite #2</span>
     </div>
 
-    <!-- Test & Approbation -->
-    <div class="panel" id="panel-publication">
-        <div class="empty-state">
-            <div class="empty-icon">📱</div>
-            <h2>Test & Approbation</h2>
-            <p>Checklist de publication App Store et Play Store, tests, durcissement, guidelines.</p>
-        </div>
+    <div class="section-title">Boucle hebdomadaire</div>
+
+    <div class="card">
+        <h3>&#x1F3A4; Live coaching</h3>
+        <p>Session vocale hebdomadaire avec coach/nutritionniste. 15 min contenu + 30 min Q&A + 15 min celebrations. Themes : sevrage, alternatives, etiquettes, nouveau mode de vie.</p>
+        <br><span class="tag tag-blue">Priorite #3</span>
     </div>
+    <div class="card">
+        <h3>&#x1F4CA; Recap hebdo automatique</h3>
+        <p>"Cette semaine, 847 Unsugirls ont check-in. 94% de taux de reussite." Chiffres collectifs = fierte de groupe.</p>
+        <br><span class="tag tag-blue">Priorite #3</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F91D; Buddy System</h3>
+        <p>Jumelage automatique a l'inscription. Si ta buddy n'a pas check-in, tu recois une notif. On lache pour soi, on ne lache pas pour quelqu'un qui compte sur nous.</p>
+        <br><span class="tag tag-orange">Priorite #2</span>
+    </div>
+
+    <div class="section-title">Boucle post-challenge</div>
+
+    <div class="card">
+        <h3>&#x1F3C6; Ceremonie de graduation</h3>
+        <p>Jour 30 : live vocal special. Badge "UnSugarist" + certificat digital partageable sur Instagram.</p>
+        <br><span class="tag tag-blue">Priorite #3</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F451; Club Alumni</h3>
+        <p>Acces permanent post-challenge. Les anciennes deviennent mentors des nouvelles vagues. 4,99 EUR/mois = revenu recurrent.</p>
+        <br><span class="tag tag-blue">Priorite #3</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F4D3; Journal de transformation</h3>
+        <p>Notes quotidiennes : energie, sommeil, humeur, peau (1-10). Courbe de progression sur 30 jours. LE contenu le plus partageable.</p>
+        <br><span class="tag tag-blue">Priorite #3</span>
+    </div>
+
+    <div class="section-title">Viralite</div>
+
+    <div class="card">
+        <h3>&#x1F517; Parrainage</h3>
+        <p>"Invite une amie, elle a -30%, tu as le prochain challenge gratuit." 1000 participantes x 1 invitee = doublement sans pub.</p>
+        <br><span class="tag tag-purple">Growth</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F4F8; Milestones partageables</h3>
+        <p>A chaque palier (3, 7, 14, 21, 30 jours), story Instagram auto-generee. Branding integre, viralite native.</p>
+        <br><span class="tag tag-purple">Growth</span>
+    </div>
+    <div class="card">
+        <h3>&#x1F381; Teaser gratuit (3 jours)</h3>
+        <p>3 premiers jours gratuits. Au jour 4, paywall a 29,99 EUR. La femme est deja accro a la communaute.</p>
+        <br><span class="tag tag-purple">Growth</span>
+    </div>
+
+    <div class="section-title">Monetisation</div>
+    <div class="card">
+        <table>
+            <tr><th>Offre</th><th>Prix</th><th>Quand</th></tr>
+            <tr><td>Challenge 30 jours</td><td>29,99 EUR</td><td>Entree</td></tr>
+            <tr><td>Club Alumni mensuel</td><td>4,99 EUR/mois</td><td>Post-challenge</td></tr>
+            <tr><td>Pack Buddy Premium (2 places)</td><td>49,99 EUR</td><td>Inscription duo</td></tr>
+            <tr><td>Coaching 1-to-1 nutritionniste</td><td>99 EUR/session</td><td>Upsell</td></tr>
+            <tr><td>Guide recettes PDF</td><td>9,99 EUR</td><td>Upsell</td></tr>
+        </table>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- TAB 6 : TEST & APPROBATION             -->
+<!-- ═══════════════════════════════════════ -->
+<div class="panel" id="panel-publication">
+
+    <div class="section-title">Comptes developpeur</div>
+    <div class="card">
+        <table>
+            <tr><th>Store</th><th>Cout</th><th>Statut</th><th>Lien</th></tr>
+            <tr><td>Apple Developer Program</td><td>99 $/an</td><td><span class="tag tag-red">A creer</span></td><td><a href="https://developer.apple.com/programs/enroll" target="_blank">Inscription</a></td></tr>
+            <tr><td>Google Play Console</td><td>25 $ (une fois)</td><td><span class="tag tag-red">A creer</span></td><td><a href="https://play.google.com/console/signup" target="_blank">Inscription</a></td></tr>
+        </table>
+        <p style="margin-top:12px; color:#888; font-size:13px">Les comptes peuvent etre crees avant d'avoir l'app. Validation : 1-5 jours.</p>
+    </div>
+
+    <div class="section-title">Checklist avant soumission App Store</div>
+
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Guideline 2.5.2</strong> — Pas de code executable dynamique. Notre app compile en natif, OK.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Guideline 4.2</strong> — Fonctionnalite minimum. Chat natif + vocal + IA = OK, pas un simple wrapper web.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Remplacer WebView Daily.co</strong> par le SDK natif @daily-co/react-native-daily-js (EAS Build).</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Securite</strong> — Verifier qu'aucune cle API n'est dans le code client. Tout passe par Supabase.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Gestion d'erreurs</strong> — Tester : pas d'internet, Supabase down, message vide, timeout API.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Performance</strong> — Pas de memory leaks, pas de crashs, app fluide.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Politique de confidentialite</strong> — Page web obligatoire, lien dans l'app.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Screenshots App Store</strong> — 6.7" (iPhone 15 Pro Max) + 6.1" + iPad si universal.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Description et metadata</strong> — Titre, sous-titre, description, mots-cles, categorie.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Icone d'app</strong> — 1024x1024px, pas de transparence, pas de coins arrondis.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Age Rating</strong> — Declarer le contenu (pas de violence, pas de contenu adulte).</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>EAS Build</strong> — Compiler avec Expo EAS au lieu d'Expo Go pour la version production.</span></div>
+
+    <div class="section-title">Checklist Play Store</div>
+
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Fiche Play Store</strong> — Titre, description courte/longue, screenshots, video promo.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Content rating</strong> — Remplir le questionnaire IARC.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Politique de confidentialite</strong> — Meme page que pour Apple.</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>Data safety</strong> — Declarer les donnees collectees (email, messages).</span></div>
+    <div class="check-item"><span class="check-box">&#x2B1C;</span><span class="check-label"><strong>AAB (Android App Bundle)</strong> — Compiler via EAS Build pour Android.</span></div>
+
+    <div class="section-title">Timeline estimee</div>
+    <div class="card">
+        <table>
+            <tr><th>Etape</th><th>Duree</th></tr>
+            <tr><td>Creer comptes developpeur</td><td>1-5 jours (validation)</td></tr>
+            <tr><td>Durcissement code + tests</td><td>1 semaine</td></tr>
+            <tr><td>SDK natif Daily.co + EAS Build</td><td>2-3 jours</td></tr>
+            <tr><td>Preparer assets (screenshots, icone, textes)</td><td>1-2 jours</td></tr>
+            <tr><td>Soumission + review Apple</td><td>1-7 jours</td></tr>
+            <tr><td>Soumission + review Google</td><td>1-3 jours</td></tr>
+        </table>
+    </div>
+</div>
 
 </div>
 
@@ -221,7 +480,6 @@
     function switchTab(name) {
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-
         document.querySelector(`[onclick="switchTab('${name}')"]`).classList.add('active');
         document.getElementById('panel-' + name).classList.add('active');
     }
